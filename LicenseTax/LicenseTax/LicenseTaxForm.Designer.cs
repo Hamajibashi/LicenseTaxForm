@@ -82,7 +82,7 @@ namespace LicenseTax
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.Location = new System.Drawing.Point(234, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 38);
+            this.label1.Size = new System.Drawing.Size(438, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = "使用牌照稅應納稅額試算";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@ namespace LicenseTax
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(71, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 19);
+            this.label2.Size = new System.Drawing.Size(124, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "貼心小叮嚀：";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,7 +105,7 @@ namespace LicenseTax
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label3.Location = new System.Drawing.Point(71, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(610, 19);
+            this.label3.Size = new System.Drawing.Size(771, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "1. 本表試算之稅額僅供參考之用，不做任何證明，實際應納稅額仍應以稽徵機關核定為準。";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,7 +119,7 @@ namespace LicenseTax
             this.linkLabel1.LinkColor = System.Drawing.Color.Teal;
             this.linkLabel1.Location = new System.Drawing.Point(71, 145);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(303, 24);
+            this.linkLabel1.Size = new System.Drawing.Size(378, 30);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "2. 使用牌照稅稅額對照表及電動車應納稅額表";
@@ -148,7 +148,7 @@ namespace LicenseTax
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(80, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 21);
+            this.label4.Size = new System.Drawing.Size(92, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "使用期間";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,7 +161,7 @@ namespace LicenseTax
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(99, 106);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 21);
+            this.label5.Size = new System.Drawing.Size(52, 25);
             this.label5.TabIndex = 6;
             this.label5.Text = "用途";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,7 +174,7 @@ namespace LicenseTax
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(27, 24);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 21);
+            this.label6.Size = new System.Drawing.Size(198, 25);
             this.label6.TabIndex = 7;
             this.label6.Text = "汽缸CC數／馬達馬力";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -186,7 +186,7 @@ namespace LicenseTax
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(73, 42);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 21);
+            this.label7.Size = new System.Drawing.Size(92, 25);
             this.label7.TabIndex = 8;
             this.label7.Text = "試算結果";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -198,7 +198,7 @@ namespace LicenseTax
             this.rbtnAnnual.BackColor = System.Drawing.Color.WhiteSmoke;
             this.rbtnAnnual.Location = new System.Drawing.Point(287, 34);
             this.rbtnAnnual.Name = "rbtnAnnual";
-            this.rbtnAnnual.Size = new System.Drawing.Size(72, 23);
+            this.rbtnAnnual.Size = new System.Drawing.Size(88, 28);
             this.rbtnAnnual.TabIndex = 9;
             this.rbtnAnnual.TabStop = true;
             this.rbtnAnnual.Text = "全年度";
@@ -211,7 +211,7 @@ namespace LicenseTax
             this.rbtnPeriod.BackColor = System.Drawing.Color.WhiteSmoke;
             this.rbtnPeriod.Location = new System.Drawing.Point(440, 34);
             this.rbtnPeriod.Name = "rbtnPeriod";
-            this.rbtnPeriod.Size = new System.Drawing.Size(72, 23);
+            this.rbtnPeriod.Size = new System.Drawing.Size(88, 28);
             this.rbtnPeriod.TabIndex = 10;
             this.rbtnPeriod.TabStop = true;
             this.rbtnPeriod.Text = "依期間";
@@ -230,7 +230,7 @@ namespace LicenseTax
             "營業用小客車"});
             this.cbxUsage.Location = new System.Drawing.Point(283, 103);
             this.cbxUsage.Name = "cbxUsage";
-            this.cbxUsage.Size = new System.Drawing.Size(313, 26);
+            this.cbxUsage.Size = new System.Drawing.Size(313, 31);
             this.cbxUsage.TabIndex = 11;
             this.toolTip1.SetToolTip(this.cbxUsage, "請選擇車種");
             this.cbxUsage.SelectedIndexChanged += new System.EventHandler(this.cbxUsage_SelectedIndexChanged);
@@ -249,16 +249,16 @@ namespace LicenseTax
             "1801或以上"});
             this.cbxCategory.Location = new System.Drawing.Point(283, 183);
             this.cbxCategory.Name = "cbxCategory";
-            this.cbxCategory.Size = new System.Drawing.Size(313, 26);
+            this.cbxCategory.Size = new System.Drawing.Size(313, 31);
             this.cbxCategory.TabIndex = 12;
             this.toolTip1.SetToolTip(this.cbxCategory, "請選擇汽缸CC數或是馬達馬力");
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(38, 42);
+            this.lblResult.Location = new System.Drawing.Point(38, 23);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(15, 19);
+            this.lblResult.Size = new System.Drawing.Size(18, 24);
             this.lblResult.TabIndex = 13;
             this.lblResult.Text = "-";
             // 
@@ -303,7 +303,7 @@ namespace LicenseTax
             this.dateTimePickerFrom.MaxDate = new System.DateTime(2022, 12, 31, 0, 0, 0, 0);
             this.dateTimePickerFrom.MinDate = new System.DateTime(1922, 1, 1, 0, 0, 0, 0);
             this.dateTimePickerFrom.Name = "dateTimePickerFrom";
-            this.dateTimePickerFrom.Size = new System.Drawing.Size(127, 27);
+            this.dateTimePickerFrom.Size = new System.Drawing.Size(127, 31);
             this.dateTimePickerFrom.TabIndex = 16;
             this.dateTimePickerFrom.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
@@ -312,7 +312,7 @@ namespace LicenseTax
             this.dateTimePickerUntil.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerUntil.Location = new System.Drawing.Point(211, 12);
             this.dateTimePickerUntil.Name = "dateTimePickerUntil";
-            this.dateTimePickerUntil.Size = new System.Drawing.Size(129, 27);
+            this.dateTimePickerUntil.Size = new System.Drawing.Size(129, 31);
             this.dateTimePickerUntil.TabIndex = 17;
             this.dateTimePickerUntil.Value = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
             // 
@@ -321,7 +321,7 @@ namespace LicenseTax
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(8, 17);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(24, 19);
+            this.label8.Size = new System.Drawing.Size(29, 24);
             this.label8.TabIndex = 18;
             this.label8.Text = "從";
             // 
@@ -330,7 +330,7 @@ namespace LicenseTax
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(176, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 19);
+            this.label9.Size = new System.Drawing.Size(29, 24);
             this.label9.TabIndex = 19;
             this.label9.Text = "至";
             // 
@@ -467,7 +467,7 @@ namespace LicenseTax
             // 
             // LicenseTaxForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;

@@ -123,8 +123,65 @@ namespace LicenseTax
                     $"應繳稅額：共{Result}元" + Environment.NewLine;
             }
 
+            else
+            {
+                DateTime dtpF = dateTimePickerFrom.Value;
+                DateTime dtpU = dateTimePickerUntil.Value;
 
-            this.DateTimePickerReset();
+                int _fm;
+                int _fd;
+                int _um;
+                int _ud;
+
+                for (var i = dtpF.Year; i <= dtpU.Year; i++)
+                {
+                    if (i > dtpF.Year)
+                    {
+                        _fm = 1;
+                        _fd = 1;
+                    }
+                    else
+                    {
+                        _fm = dtpF.Month;
+                        _fd = dtpF.Day;
+                    }
+
+                    DateTime _df = new DateTime(i, _fm, _fd);
+                    if (i < dtpU.Year)
+                    {
+                        _um = 12;
+                        _ud = 31;
+                    }
+                    else
+                    {
+                        _um = dtpU.Month;
+                        _ud = dtpU.Day;
+                    }
+
+                    DateTime _du = new DateTime(i, _um, _ud);
+                    TimeSpan _daysDiff = _du - _df;
+                    int _CalDays = _daysDiff.Days + 1;
+
+                    int _yeartype;
+                    if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
+                        _yeartype = 366;
+                    else
+                        _yeartype = 365;
+
+                    int _Result = Tax * _CalDays / _yeartype;
+
+                    this.lblResult.Text +=
+                    $"使用期間：{i}/{_fm}/{_fd} ～ {i}/{_um}/{_ud}" + Environment.NewLine +
+                    $"計算天數：{_CalDays}天" + Environment.NewLine +
+                    $"汽缸CC數：{cbxCategory.SelectedItem}" + Environment.NewLine +
+                    $"用途：{cbxUsage.SelectedItem}" + Environment.NewLine +
+                    $"計算公式：{Tax}*{_CalDays} / {_yeartype} = {_Result}元" + Environment.NewLine +
+                    $"應繳稅額：共{_Result}元" + Environment.NewLine +
+                    $"-------------------------------------------" + Environment.NewLine;
+                }
+            }
+
+               this.DateTimePickerReset();
         }
         #endregion
 
